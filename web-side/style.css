@@ -1,0 +1,199 @@
+*{
+  user-select: none;
+}
+small{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-top: 1%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.60vmax;
+  color: white;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  padding: 0 0 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+
+.subtittle{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px;
+  font-family: Montserrat;
+  font-style: italic;
+  color: rgb(182, 121, 30);
+}
+
+.itens::-webkit-scrollbar {
+  width: 0vw;               /* width of the entire scrollbar */
+}
+
+.menu{
+  position: relative;
+  width: auto;
+  height: auto;
+  background: #1E2228;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  /* border-radius: 0.2604166666666667vw; */
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.itemproduction {
+  width: 100px;
+  padding: 10px;
+}
+
+.topo{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+
+.d-flex{
+  display: flex;
+}
+
+.marginRadius{
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.w100{
+  width: 98%;
+}
+
+.f-row{
+  flex-direction: row;
+}
+
+.f-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1{flex: 1;}
+.flex3{flex: 3;}
+
+.img-fit > img{
+  object-fit: contain;
+  width: 80px;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.bg1{
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.bg2{
+  background-color: rgba(255, 255, 255, 0.116);
+}
+.bg3{
+  background-color: rgba(255, 255, 255, 0.507);
+}
+
+.imgmateriais{
+  background-color:#25292f;
+}
+
+.radius{
+  border-radius: 5px;
+}
+
+.mr{
+  margin: 0 5px 0 0;
+}
+
+.mr:last-child{
+  margin: 0 0 0 0;
+}
+
+.itens-necessarios{
+  background-color:#25292f;
+  margin: 5px 5px 5px 0;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.itens{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  margin: 10px;
+  min-height: 144px;
+}
+
+.btnMontar{
+  padding: 7px 10px;
+  font-size: small;
+  font-weight: 700;
+  background-color: #845EC2;
+  color: #1E2228;
+  text-align: center;
+}
+
+.btnMontar:hover{
+  background-color: #6430b8;
+  transition: 0.3s;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(145, 137, 137, 0.685);
+  border-radius: 10px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textItem{
+  margin-left: 10px;
+}
+
+.marginItemTittle{
+  margin: 5px 5px 0;
+}
+
+.marginItemFigure{
+  margin: 5px 0 5px 5px;
+}
