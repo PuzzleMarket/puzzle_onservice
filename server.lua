@@ -67,8 +67,12 @@ function pz.turnServiceOut(group, blipType)
 	end
 end
 
-function pz.checkGroup(group)
+function pz.checkGroup(groups)
 	local source = source
 	local user_id = vRP.getUserId(source)
-	return vRP.hasGroup(user_id,group)
+	for k,v in pairs(groups) do
+		for j,x in pairs(v) do
+			if vRP.hasGroup(user_id,x) == true then return x end
+		end
+	end
 end

@@ -25,20 +25,12 @@ CreateThread(function()
 			if distance <= 7 and not opened then
 				sleep = false
 			 	DrawMarker(21, v.coord,0,0,0,0.0,0,0,0.5,0.5,0.4,255,230,100,100,0,0,0,1)
-				for key,value in pairs(perms[v.type]) do
-					if distance <= 1.5 and
-						IsControlJustPressed(0,38) and
-						( pz.checkGroup(value.inServiceGroup) or pz.checkGroup(value.outServiceGroup) ) 
-					then
+				 if distance <= 1.5 and	IsControlJustPressed(0,38) and pz.checkGroup(perms[v.type]) then
+					currentGroup = pz.checkGroup(perms[v.type])
+					if (currentGroup ~= nil) then
 						opened = true
 						SetNuiFocus(true, true)
 						TransitionToBlurred(true)
-
-						if pz.checkGroup(value.inServiceGroup) then
-							currentGroup = value.inServiceGroup
-						else
-							currentGroup = value.outServiceGroup
-						end
 
 						SendNUIMessage({
 							action = 'open',
@@ -46,7 +38,6 @@ CreateThread(function()
 							currentGroup = currentGroup,
 							currentGroupTitle = pz.getGroupTitle(currentGroup)
 						})
-
 					end
 				end
 			end
